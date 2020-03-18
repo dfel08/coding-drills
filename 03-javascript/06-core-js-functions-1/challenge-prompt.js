@@ -1,5 +1,7 @@
 // define a function "fun" that console logs "Functions are FUN!"
-
+function fun() {
+    console.log("Functions are FUN!")
+};
 
 
 // before moving on, open index.html and see what console logs have been made.
@@ -7,17 +9,21 @@
 /*
 
 Your Answer here
-
+    Because the function has not been called yet. We only created it.
 */
 
 
 // define a function "thirtySeven" that console logs the sum of 18 and 19
-
-
+function thirtySeven () {
+    console.log(18+19)
+};
 
 // call two functions you've defined so far
+function test () {
+    console.log()
+}
 
-
+test.fun
 // define a function "log" that takes in an argument and console logs that argument
 
 
