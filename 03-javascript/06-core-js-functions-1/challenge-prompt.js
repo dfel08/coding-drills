@@ -19,28 +19,35 @@ function thirtySeven () {
 };
 
 // call two functions you've defined so far
-function test () {
-    console.log()
+thirtySeven();
+fun();
+
+// define a function "log" that takes in an argument and console logs that argument
+function log(world) {
+    console.log(" World")
 }
 
-test.fun
-// define a function "log" that takes in an argument and console logs that argument
-
-
-
 // define a function "hello" that calls on the "log" function to console log "Hello World"
-
+function hello() {
+    console.log() 
+}
+log()
+    //still not working
 
 
 // call your "hello" function
-
+hello();
 
 // define a function "popUp" that creates an alert that says "This is an alert."
-
+function popUp() {
+    alert("This is an alert.")
+}
 
 
 // define a function "noPopUp" that creates an alert that says "Okay, you won't get a pop up."
-
+function noPopUp() {
+    alert("Okay, you won't get a pop up.")
+}
 
 
 // define a function "goodDay" that creates a confirm dialogue asking the user if they are having a nice day
