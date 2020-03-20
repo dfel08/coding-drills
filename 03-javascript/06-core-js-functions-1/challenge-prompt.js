@@ -23,16 +23,16 @@ thirtySeven();
 fun();
 
 // define a function "log" that takes in an argument and console logs that argument
-function log(world) {
-    console.log(" World")
+function log(greeting) {
+    console.log(greeting + " World")
 }
 
 // define a function "hello" that calls on the "log" function to console log "Hello World"
 function hello() {
-    console.log() 
+    log("Hello")
 }
-log()
-    //still not working
+
+
 
 
 // call your "hello" function
@@ -53,10 +53,17 @@ function noPopUp() {
 // define a function "goodDay" that creates a confirm dialogue asking the user if they are having a nice day
 // and uses your "log" function to display the response
 
+function goodDay () {
+    confirm("Are you having a nice day?")
+    if (confirm = "OK") {
+        console.log(log("Yes"))
+    } else (confirm = "Cancel") 
+        console.log(log("No"))
+    }
 
 
 // call your "goodDay" function
-
+goodDay();
 
 // define a function "userPopUp" that creates a confirm dialogue asking the user if they would like a popup
 // if they answer yes, call upon your "popUp" function; otherwise, call upon your "noPopUp" function

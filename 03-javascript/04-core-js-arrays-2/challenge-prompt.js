@@ -45,24 +45,42 @@ console.log("--------------------------Seperator 2--------------------------");
 // We've declared this array for you
 var numArray = [2, 65, 3, 7, 39, 22, 11, 94, 299, 9, 20, 21, 51, 37];
 // iterate through numArray and create an individual console log for every number greater than 50
-for (var i = 0, i < numArray.length, i++)
+for (var i = 0; i < numArray.length; i++) {
+  if (numArray[i] > 50) {
+    console.log(numArray[i] + " is greater than 50.")
+  }
+}
 
 
 // iterate through numArray and create an alert that tells us 
 // the index of all the occurances of the number 11
-
+for (var i = 0; i < numArray.length; i++) {
+  if (numArray[i] === 11) {
+    console.log(numArray[i] + " is equal to 11.")
+  }
+}
 
 
 // iterate through numArray and console log the sum of all the numbers
-
-
+for (var i = 0; i < numArray.length; i++) {
+  console.log(numArray[i])
+}
+//not working...iterating each number, but not adding
 
 // iterate through numArray and console log the sum of all the numbers greater than 50
-
+for (var i = 0; i < numArray.length; i++) {
+  if (numArray[i] > 50) {
+    console.log(numArray[i] + " is greater than 50.")
+  }
+}
 
 
 // iterate through numArray and console log the sum of all the even numbers
-
+for (var i = 0; i < numArray.length; i++) {
+  if (numArray[i] % 2 === 0) {
+    console.log(numArray[i] + " is divisible by 2.")
+  }
+}
 
 
 // This seperator is here to make your console logs a little easier to read 
@@ -74,19 +92,31 @@ var fruits = [
   "Apple", "Orange", "Banana", "Pomelo", "Apple", "Kiwi", "Peach", "Banana", "Grape", "Tomato", 
   "Kiwi", "Apple", "Watermelon", "Lemon", "Pomelo", "Apple", "Banana", "Peach", "Apricot", "Grape"];
 // iterate through fruits and console log the number of times "Apple" appears in the array
-
+for (var i = 0; i < fruits.length; i++) {
+  if (fruits[i] === "Apple") {
+    console.log(fruits[i])
+  }
+}
 
 
 // iterate through fruits and console log the number of times "Peach" appears in the array
-
+for (var i = 0; i < fruits.length; i++) {
+  if (fruits[i] === "Peach") {
+    console.log(fruits[i])
+  }
+}
 
 
 // iterate through fruits and console log the number of fruits that start with "P" in the array
-
+for (var i = 0; i < fruits.length; i++) {
+  if (fruits[i][0] === "P") {
+    console.log(fruits[i])
+  }
+}
 
 
 // create a new empty array named uniqueFruits
-
+var uniqueFruits = []
 
 // iterate through fruits and populate uniqueFruits with only unique values from fruits
 // you should a shorter array without repeated values
