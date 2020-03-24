@@ -53,13 +53,14 @@ function noPopUp() {
 // define a function "goodDay" that creates a confirm dialogue asking the user if they are having a nice day
 // and uses your "log" function to display the response
 
-function goodDay () {
-    confirm("Are you having a nice day?")
-    if (confirm = "OK") {
-        console.log(log("Yes"))
-    } else (confirm = "Cancel") 
-        console.log(log("No"))
+function goodDay() {
+    var confirmResult = confirm("Are you having a nice day?")
+    if (confirmResult) {
+        log("Yes")
+    } else {
+        log("No")
     }
+}
 
 
 // call your "goodDay" function
@@ -68,25 +69,40 @@ goodDay();
 // define a function "userPopUp" that creates a confirm dialogue asking the user if they would like a popup
 // if they answer yes, call upon your "popUp" function; otherwise, call upon your "noPopUp" function
 
+function userPopUp() {
+    var confirmPopUp = confirm("Would you like a pop up?")
+    if (confirmPopUp) {
+        popUp()
+    } else {
+        noPopUp()
+    }
+};
+
 
 
 // call your "userPopUp" function
-
+userPopUp();
 
 // define a function "userName" that prompts the user for their name and then 
 // uses your "log" function to display the response
-
+function userName() {
+    var yourName = prompt("What is your name?")
+        log(yourName)
+}
 
 
 // call your "userName" function
-
+userName()
 
 // define a function "favoriteFruit" that prompts the user for their favorite fruit
 // and the creates an alert that displays the response
-
+function favoriteFruit() {
+    var fruitName = prompt("What's your favorite fruit?")
+    alert(fruitName)
+};
 
 
 // call your "favoriteFruit" function
-
+favoriteFruit()
 
 

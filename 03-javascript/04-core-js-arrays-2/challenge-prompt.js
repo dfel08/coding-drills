@@ -120,11 +120,21 @@ var uniqueFruits = []
 
 // iterate through fruits and populate uniqueFruits with only unique values from fruits
 // you should a shorter array without repeated values
+for (var i = 0; i < fruits.length; i++) {
+  if (!uniqueFruits.includes(fruits[i]) ) {
+    uniqueFruits.push(fruits[i])
+  }
+} 
 
+for (var i = 0; i < fruits.length; i++) {
+  for (var j = 0; j < uniqueFruits.length; j++) {
+    if (uniqueFruits[j] === fruits[i])
+  }
+}
 
 
 // console log out your uniqueFruits array
-
+console.log(uniqueFruits)
 
 
 
