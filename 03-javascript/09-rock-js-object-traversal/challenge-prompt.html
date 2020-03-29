@@ -584,9 +584,9 @@ for(var i = talk.theView.host; i < talk.theView.host.length; i++) {
 //QUESTION: What are the show names of the Impractical Jokers (comedy)
 //Hint: You will need to use a loop for this one. You may not simply log the entire array, but must log each name individually
 //ANSWER: 
-for(var i = comedy.impracticalJokers.cast.showName; i < comedy.impracticalJokers.cast.length; i++) {
-  console.log(showName); 
-};
+//for(var i = 0; i < comedy.impracticalJokers.cast.length; i++) {
+  //console.log(comedy.impracticalJokers.cast.showName[i]); 
+//};
 //not working
 // 
 //==============================================================
@@ -621,10 +621,11 @@ for(var i = comedy.theOffice.cast.character; i < comedy.theOffice.cast.length; i
 //======================== QUESTION 13 ==========================
 //QUESTION: List the characters in Teen Titans (kids)
 //ANSWER: 
-for(var i = kids.teenTitans.cast.character; i < kids.teenTitans.cast.length; i++) {
-  console.log(i); 
-}
-//not working
+var teenTitansCast = Object.values(kids.teenTitans.cast)
+for(var i = 0; i < teenTitansCast; i++) {
+  console.log(teenTitansCast[i].character); 
+};
+//not logging
 //==============================================================
 
 //======================== QUESTION 14 ==========================
@@ -642,10 +643,12 @@ console.log(drama.walkingDead.cast[2].actor);
 //======================== QUESTION 16 ==========================
 //QUESTION: List the main cast of Dexter (drama) (the actors, not the characters)
 //ANSWER: 
-for(var i = drama.dexter.cast[0, 1, 2, 3, 4].actor; i < drama.dexter.cast.length; i++) {
-  console.log(i); 
+var dexterCast = Object.values(drama.dexter.cast)
+for(var i = 0; i < dexterCast.length; i++) {
+  console.log(dexterCast[i].actor)
 }
-//mostly not working
+
+//NOW it works
 //==============================================================
 
 //======================== QUESTION 17 ==========================
@@ -663,10 +666,10 @@ console.log(drama.gameOfThrones.cast[1].character);
 //======================== QUESTION 19 ==========================
 //QUESTION: List the American Idol Judges
 //ANSWER: 
-for(var i = reality.americanIdol.judges; i < reality.americanIdol.judges.length; i++) {
-  console.log(i); 
+for(var i = 0; i < reality.americanIdol.judges.length; i++) {
+  console.log(reality.americanIdol.judges[i]); 
 }
-//not working
+//NOW it works
 //==============================================================
 
 //======================== QUESTION 20 ==========================
