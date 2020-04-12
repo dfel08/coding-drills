@@ -30,7 +30,7 @@ $(document).ready(function () {
     textButton.text(letters[i]);
 
     // 2.6. Final step is to append "textButton" to the variable btns.
-    btns.append(textButton);
+    textButton.append(btns);
 
   }
 
